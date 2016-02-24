@@ -1,0 +1,30 @@
+<ion-view view-title="Contactos">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-dark" >
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+		</ion-nav-buttons>
+		<ion-nav-buttons side="right">
+			<button class="button" ng-click="getContacts()">Ver</button>
+		</ion-nav-buttons>
+		<h1 class="title">Contactos</h1>
+	</ion-nav-bar>
+
+	<ion-content>
+		<div ng-show="!phoneContacts.length && mostrar == true">
+			Cargando...
+		</div>
+		<div class="list">
+			<div ng-repeat="contact in phoneContacts | orderObjectBy:'displayName'">
+				<a class="item item-avatar" href="#" ng-show="contact.phoneNumbers.length">
+					<img ng-src="{{ contact.photos[0].value || 'img/logo.svg' }}">
+					<h2>{{ contact.displayName }}</h2>
+					<div ng-repeat="number in contact.phoneNumbers">
+						<p>{{ number.value }}</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

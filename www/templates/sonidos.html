@@ -1,0 +1,20 @@
+<ion-view view-title="Sonidos">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-dark" >
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+		</ion-nav-buttons>
+		<h1 class="title">Sonidos</h1>
+	</ion-nav-bar>
+
+	<ion-content ng-controller="SoundCtrl">
+		<p><button ng-click="playSound()" class="button icon-left ion-play button-assertive">Play</button></p>
+		<!--<p><button ng-click="play('audio/debutante.mp3')" class="button icon-left ion-play button-assertive">Play</button></p>-->
+		<!--<p><button ng-click="media.pause()" class="button icon-left ion-pause button-assertive">Pause</button></p>-->
+		<p><button ng-click="stopSound()" class="button icon-left ion-stop button-assertive">Stop</button></p>
+		<input type="file" id="file"/>
+		{{media}}
+		{{src}}
+	</ion-content>
+
+</ion-view>

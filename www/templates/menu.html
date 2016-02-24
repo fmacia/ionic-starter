@@ -1,0 +1,60 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Menú</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+				<ion-item menu-close href="#/app/contactos">
+          Contactos
+        </ion-item>
+				<ion-item menu-close href="#/app/dispositivo">
+          Dispositivo
+        </ion-item>
+				<ion-item menu-close href="#/app/toast">
+					Toast
+        </ion-item>
+				<ion-item menu-close href="#/app/vibracion">
+          Vibración
+        </ion-item>
+				<ion-item menu-close href="#/app/bateria">
+          Batería
+        </ion-item>
+				<ion-item menu-close href="#/app/camara">
+          Cámara
+        </ion-item>
+				<ion-item menu-close href="#/app/motion">
+          Acelerómetro
+        </ion-item>
+				<ion-item menu-close href="#/app/red">
+          Conexión a la red
+        </ion-item>
+				<ion-item menu-close href="#/app/compartir">
+          Compartir
+        </ion-item>
+				<ion-item menu-close href="#/app/sqlite">
+          Sqlite (no va)
+        </ion-item>
+				<ion-item menu-close href="#/app/sonidos">
+          Sonidos
+        </ion-item>
+        <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

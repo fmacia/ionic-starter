@@ -1,0 +1,33 @@
+<ion-view view-title="Toast">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-dark" >
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+		</ion-nav-buttons>
+		<h1 class="title">Toast</h1>
+	</ion-nav-bar>
+
+  <ion-content class="padding">
+  	<form name="toastform" ng-submit="showToast()">
+			<ion-list>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Texto</span>
+			    <input ng-model="data.texto" type="text" placeholder="Texto">
+			  </label>
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Duración</span>
+					<ion-radio name="duracion" ng-model="data.duracion" ng-value="'short'">Corta</ion-radio>
+					<ion-radio name="duracion" ng-model="data.duracion" ng-value="'long'">Larga</ion-radio>
+				</label>
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Posición</span>
+					<ion-radio name="posicion" ng-model="data.posicion" ng-value="'top'">Arriba</ion-radio>
+					<ion-radio name="posicion" ng-model="data.posicion" ng-value="'center'">Centro</ion-radio>
+					<ion-radio name="posicion" ng-model="data.posicion" ng-value="'bottom'">Abajo</ion-radio>
+				</label>
+			</ion-list>
+			<input class="button button-block button-assertive" type="submit" value="Mostrar Toast" />
+		</form>
+  </ion-content>
+
+</ion-view>

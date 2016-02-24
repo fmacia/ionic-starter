@@ -1,0 +1,25 @@
+<ion-view view-title="Batería">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-dark" >
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+		</ion-nav-buttons>
+		<h1 class="title">Batería</h1>
+	</ion-nav-bar>
+
+  <ion-content>
+		<div class="card">
+      <div class="item item-text-wrap">
+        <ul class="list">
+          <li class="item">
+            Nivel: {{batteryLevel}} %
+          </li>
+          <li class="item">
+            Cargando: {{isPluggedIn ? 'Sí' : 'No'}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>

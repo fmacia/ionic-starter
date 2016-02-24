@@ -1,0 +1,28 @@
+<ion-view view-title="Conexión a la red">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-dark" >
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+		</ion-nav-buttons>
+		<h1 class="title">Conexión a la red</h1>
+	</ion-nav-bar>
+
+	<ion-content>
+    <div class="card">
+      <div class="item item-text-wrap">
+        <ul class="list">
+          <li class="item">
+            Tipo de conexión : {{type}}
+          </li>
+          <li class="item">
+            Conectado: {{isOnline ? 'Sí' : 'No'}}
+          </li>
+          <li class="item">
+            Sin conexión: {{isOffline ? 'Sí' : 'No'}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view view-title="Dispositivo">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-dark" >
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+		</ion-nav-buttons>
+		<h1 class="title">Dispositivo</h1>
+	</ion-nav-bar>
+
+	<ion-content>
+		<div class="card">
+      <div class="item item-text-wrap">
+        <ul class="list">
+          <li class="item">
+            Fabricante : {{manufacturer}}
+          </li>
+          <li class="item">
+            Modelo : {{model}}
+          </li>
+          <li class="item">
+            Plataforma : {{platform}}
+          </li>
+          <li class="item">
+            UUID : {{uuid}}
+          </li>
+        </ul>
+      </div>
+  </div>
+	</ion-content>
+
+</ion-view>

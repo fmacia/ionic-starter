@@ -1,0 +1,17 @@
+<ion-view view-title="Cámara">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-dark" >
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+		</ion-nav-buttons>
+		<h1 class="title">Cámara</h1>
+	</ion-nav-bar>
+
+  <ion-content class="padding">
+		<img class="full-image" ng-src="{{imgSrc}}" ng-click="showImage()">
+		<button class="button button-block button-assertive" ng-click="takePicture()">
+      Tomar foto
+    </button>
+  </ion-content>
+
+</ion-view>
